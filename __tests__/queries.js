@@ -9,7 +9,7 @@ afterAll(async () => {
   await stopDatabase();
 });
  
-test("fetch users", async (done) => {
+/*test("fetch users", async (done) => {
  
   request
     .post("/graphql")
@@ -25,9 +25,9 @@ test("fetch users", async (done) => {
       expect(res.body.data.users.length).toEqual(3);
       done();
     });
-});
+});*/
 
-test1("query that does not exist", async () => {
+test("query that does not exist", async () => {
     const response = await request
       .post("/graphql")
       .send({
