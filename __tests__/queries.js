@@ -27,7 +27,7 @@ afterAll(async () => {
     });
 });*/
 
-test("query that does not exist", async () => {
+test1("query that does not exist", async () => {
     const response = await request
       .post("/graphql")
       .send({
